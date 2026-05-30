@@ -135,7 +135,7 @@ async def mcp_endpoint(request: Request):
                         "name": "DuckDuckGo Web Search",
                         "version": APP_VERSION,
                     },
-                }
+                }           
                 yield create_sse_message("message", wrap_response(result))
 
             elif method == "resources/list":
